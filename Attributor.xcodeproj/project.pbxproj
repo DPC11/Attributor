@@ -14,6 +14,7 @@
 		EA3B64331B553682009EF14F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3B64321B553682009EF14F /* Images.xcassets */; };
 		EA3B64361B553682009EF14F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3B64341B553682009EF14F /* LaunchScreen.xib */; };
 		EA3B64421B553682009EF14F /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B64411B553682009EF14F /* AttributorTests.m */; };
+		EA4CCCC41B620DB700FFDB38 /* AnalyzeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4CCCC31B620DB700FFDB38 /* AnalyzeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EA3B643B1B553682009EF14F /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3B64401B553682009EF14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA3B64411B553682009EF14F /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		EA4CCCC21B620DB700FFDB38 /* AnalyzeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyzeViewController.h; sourceTree = "<group>"; };
+		EA4CCCC31B620DB700FFDB38 /* AnalyzeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyzeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				EA3B642C1B553682009EF14F /* ViewController.h */,
 				EA3B642D1B553682009EF14F /* ViewController.m */,
+				EA4CCCC21B620DB700FFDB38 /* AnalyzeViewController.h */,
+				EA4CCCC31B620DB700FFDB38 /* AnalyzeViewController.m */,
 				EA3B642F1B553682009EF14F /* Main.storyboard */,
 				EA3B64321B553682009EF14F /* Images.xcassets */,
 				EA3B64341B553682009EF14F /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3B642E1B553682009EF14F /* ViewController.m in Sources */,
+				EA4CCCC41B620DB700FFDB38 /* AnalyzeViewController.m in Sources */,
 				EA3B642B1B553682009EF14F /* AppDelegate.m in Sources */,
 				EA3B64281B553682009EF14F /* main.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				EA3B64471B553682009EF14F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA3B64481B553682009EF14F /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				EA3B644A1B553682009EF14F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

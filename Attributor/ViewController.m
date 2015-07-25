@@ -7,16 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "AnalyzeViewController.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *headline;
 @property (weak, nonatomic) IBOutlet UITextView *body;
 @property (weak, nonatomic) IBOutlet UIButton *outlineButton;
 
 @end
 
 @implementation ViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"AnalyzeText"]) {
+        if ([segue.destinationViewController isKindOfClass:[AnalyzeViewController class]]) {
+            AnalyzeViewController *anVC = (AnalyzeViewController *)segue.destinationViewController;
+            anVC.textToAnalyze = self.body.textStorage;
+        }
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,7 +61,6 @@
 
 - (void)usePreferredFonts {
     self.body.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    self.headline.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
 }
 
 - (void)didReceiveMemoryWarning {
